@@ -117,12 +117,12 @@
 
     <div class="center">
       <ul class="menu uppercase">
-        <li><a href="#intro">Introduction</a></li>
-        <li><a href="#">Product</a></li>
-	<li><a href="#service">Service</a></li>
-        <li><a href="#">Explore</a></li>
-	<li><a href="#">Pricing</a></li>
-	<li><a href="#">Contact Us</a></li>
+        <li><a href="#Introduction">Introduction</a></li>
+        <li><a href="#services">Service</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#explore">Explore</a></li>
+	<li><a href="#pricing">Pricing</a></li>
+	<li><a href="#contact">Contact Us</a></li>
      </ul>
 	  </div>
 	  
@@ -171,7 +171,7 @@
 
 
 <!-- Slide 1 (#09) -->
-<section class="slide fade-6 kenBurns">
+<section class="slide fade-6 kenBurns" id="Introduction">
   <div class="content">
     <div class="container">
       <div class="wrap">
@@ -191,7 +191,8 @@
    <!--           <input type="email" class="input-9 ae-4 fromCenter" name="user-email" placeholder="Email" val=""/>
            <input type="password" class="input-9 ae-5 fromCenter" name="user-password" placeholder="Password" val=""/>
             <input type="password" class="input-9 ae-6 fromCenter" name="confirm-password" placeholder="Confirm the password" val=""/>  -->
-            <button type="submit" class="button blue gradient ae-7 fromCenter" name="button">Contact Us</button>
+            <a href="#contact">
+            <button type="submit" class="button blue gradient ae-7 fromCenter" name="button">Contact Us</button></a>
           </form>
         </div>
 	      
@@ -226,7 +227,7 @@
 
 
 <!-- Slide 2 (#15) -->
-<section class="slide fade-6 kenBurns fromLeft">
+<section class="slide fade-6 kenBurns fromLeft" id="explore">
   <div class="content">
     <div class="container">
       <div class="wrap">
@@ -235,7 +236,7 @@
           <div class="fix-7-12 left toRight">
             <h1 class="ae-1">Free and Open Source CIP Monitoring</h1>
             <p class="ae-2"><span class="opacity-8">Earthworm will  increase the CIP compliance posture, maintain consistency across departments for reporting metrics under the CIP program and beyond. CIP audits requires months of preparation time and efforts for organization. Implementation of the Earthworm monitoring system will allow organizations to save money by reducing the cost of resources that are dedicated to supporting CIP audits internally and externally. Also the software is 100% free.</span></p>
-              <a class="button blue gradient crop ae-3">Request Demo</a>
+              <a  href="#contact" class="button blue gradient crop ae-3">Request Demo</a>
 
           </div>
         </div>
@@ -247,7 +248,7 @@
 </section>
 
 <!-- Slide 3 (#14) -->
-<section class="slide fade-6 kenBurns fromRight">
+<section class="slide fade-6 kenBurns fromRight" id="services">
   <div class="content">
     <div class="container">
       <div class="wrap">
@@ -256,7 +257,7 @@
           <div class="fix-6-12 left toLeft">
             <h1 class="ae-1">SCADA/EMS Services</h1>
             <p class="ae-2"><span class="opacity-8">The critical Infrastructure assets need real-time support. Services are offered for to help bridge any gap in the process. The Services that are provided will support SCADA/EMS upgrades, On-Call Support, System Stabilization, and Best Practices. We perform a system analisis and build a playbook for moving forward. </span></p>
-            <a class="button blue gradient crop ae-3">Request Support</a>
+            <a href="#contact" class="button blue gradient crop ae-3">Request Support</a>
           </div>
         </div>
             
@@ -267,7 +268,7 @@
 </section>
 
 <!-- Slide 4 (#89) -->
-<section class="slide fade-6 kenBurns">
+<section class="slide fade-6 kenBurns" id="product">
   <div class="content">
     <div class="container">
       <div class="wrap">
@@ -338,7 +339,7 @@
 
 
 <!-- Slide 5 (#85) -->
-<section class="slide fade-6 kenBurns">
+<section class="slide fade-6 kenBurns" id="pricing">
   <div class="content">
     <div class="container">
       <div class="wrap">
@@ -400,7 +401,7 @@
 </section>
 
 <!-- Slide 6 (#95) -->
-<section class="slide fade-6 kenBurns">
+<section class="slide fade-6 kenBurns" id="contact">
   <div class="content">
     <div class="container">
       <div class="wrap">
@@ -408,7 +409,7 @@
         <div class="fix-12-12">
           <ul class="flex left">
             <li class="col-6-12 fromBottomLeft">
-              <p class="opacity-6 margin-bottom-2 ae-1">Contact Us</p>
+              <p class="contacttab margin-bottom-2 ae-1">Contact Us</p>
               <h1 class="ae-2">Secure Your OT Environments</h1>
               <div class="ae-3"><p class="opacity-8">Protecting critical assets in an enviornment is no easy task. We understand the challenges and complex environments. Chat with one of our Subject Matter experts to learn how we can bridge gaps in your environments.</p></div>
            
@@ -420,26 +421,39 @@
 		    <form action="https://formspree.io/f/xoqbbbew"
   method="POST">
   <p><label>
-    First Name:
+    First name:
     <input type="fname" name="first name">
 	  </label></p>
   
 			    <p><label>
-    Last Name:
+    Last name:
     <input type="lname" name="last name">
   </label>
 			    </p>
  <p> <label>
-    Your Email:
+    Your email:
     <input type="email" name="email">
 	 </label> </p>
- <p> <label>
+ <p class="msg"> <label>
     Message:
     <textarea name="message"></textarea>
 	 </label> </p>
+   <div class="form-check">
+    <label class="form-check-label">
+      <input type="checkbox" class="form-check-input" value="">Asset Visibility & Management
+    </label>
+  </div>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="checkbox" class="form-check-input" value="">compliance Reporting
+    </label>
+  </div>
 
   <!-- your other form fields go here -->
-<button type="submit">Submit</button>
+  <div class="col-md-12 text-center"style="text-align: center;
+  padding-top: 12px;">
+    <button type="submit">Submit</button>
+  </div>
 		
 			    
 </form>	    
